@@ -4,7 +4,7 @@ Javascript file'ları, diğer project file'ları anlamlı bir biçimde grupland�
 
 ### package.json'u Oluşturmak
 
-`npm init`
+> npm init
 
 ### Babel Node Modulleri'nin Kurulumu
 
