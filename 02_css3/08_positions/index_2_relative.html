@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position-Relative</title>
+
+    <style>
+        
+        /* 
+            position: relative, bir elementi o anki konumunu baz alarak, top, left, right 
+            gibi özelliklerin kullanılmasını sağlar.
+            
+            Örneğin, position'ı relative olan bir elementin css'ine left: 20px denilirse,
+            bulunduğu konumdan 20px sola gidecektir. Bu top, bottom ve right için de geçerlidir.
+
+            Doğal olarak bu durumda elementin diğer elementlerin alanına girmesi söz konusu olur.
+            Bu durumlarda <body> içerisine eklenme sırasına bağlı olarak, son eklenen üstte kalacaktır.
+
+            Bu belirtilen durumun da değimesi için, yani hangi elementin üstte hangisinin altta olacağını
+            belirlemek için, bu elementlerin 'z-index' değerlerinin büyüklüğüne bakılır.
+            Büyük olan eleman üstte yer alır.
+        */
+
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            position: relative;
+            top: 20px;
+            left: 20px;
+
+            z-index: 1;
+        }
+
+        .blue {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            left: 5px;
+            top: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="red"></div>
+    <div class="blue"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling</title>
+
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 75%;
+            margin: 0 auto;
+            font-size: 1.5em;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        thead tr {
+            background: green;
+            color: white;
+        }
+
+        tbody tr {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even){
+            background: #f2f2f2;
+        }
+
+        tbody tr:hover{
+            background: #ddd;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <table class="employees">
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Meslek</th>
+                <th>Yaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Coşkun</th>
+                <th>Yazılım Mühendisi</th>
+                <th>29</th>
+            </tr>
+            <tr>
+                <th>Tolga</th>
+                <th>Satış Danışmanı</th>
+                <th>29</th>
+            </tr>
+            <tr>
+                <th>Ege</th>
+                <th>İnşaat Mühendisi</th>
+                <th>30</th>
+            </tr>
+            <tr>
+                <th>Yiğit</th>
+                <th>Antrenör</th>
+                <th>29</th>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

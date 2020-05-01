@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position-Fixed</title>
+
+    <style>
+        .fixed-topbar {
+            width: 50%;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+
+            /* Scroll'e rağmen div'i ekrandaki yerine sabitler. 
+               Scroll aşağı kaydırılsa dahi aynı yerde kalır.
+            */
+            position: fixed;
+
+            /* div'i sağa yaslar */
+            right: 0px;
+
+            /* div'i aşağıya indirir. */
+            bottom: 0px;
+        }
+    </style>
+
+</head>
+
+<body style="height: 1000px">
+
+    <div class="fixed-topbar">
+        Topbar
+    </div>
+
+</body>
+
+</html>
