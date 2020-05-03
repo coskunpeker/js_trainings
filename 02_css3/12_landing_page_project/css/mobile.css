@@ -1,0 +1,22 @@
+#navbar {
+    flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+    height: 90px;
+}
+
+#training .items {
+    flex-direction: column;
+}
+
+#training .items .item {
+    width: 100%;
+}
+
+.books .book {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
